@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Music Producer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#streaming">Streaming</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#reels">Reels</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Introduction about you and your work.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Detailed biography, skills, and experience.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div id="filters">
+            <label for="artist">Artist:</label>
+            <select id="artist" onchange="filterContent()">
+                <option value="all">All</option>
+                <!-- Add options dynamically -->
+            </select>
+            <label for="genre">Genre:</label>
+            <select id="genre" onchange="filterContent()">
+                <option value="all">All</option>
+                <!-- Add options dynamically -->
+            </select>
+            <!-- Add more filters as needed -->
+        </div>
+        <div id="content">
+            <!-- Content will be loaded here dynamically -->
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div id="projects-list">
+            <!-- List of projects -->
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <div id="blog-posts">
+            <!-- Blog posts -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="streaming">
+        <h2>Streaming</h2>
+        <div>
+            <h3>Spotify</h3>
+            <iframe src="https://open.spotify.com/embed/artist/your-spotify-id" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <h3>SoundCloud</h3>
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/your-soundcloud-id&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <h3>YouTube Music</h3>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/your-youtube-music-id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="photos">
+        <h2>Photos</h2>
+        <div>
+            <iframe src="https://www.instagram.com/your-instagram-username/embed" width="320" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        </div>
+    </section>
+
+    <section id="reels">
+        <h2>Reels</h2>
+        <div>
+            <iframe src="https://www.instagram.com/your-instagram-username/embed/reels" width="320" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
